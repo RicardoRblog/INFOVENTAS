@@ -256,7 +256,7 @@ footer .redes a{
 
 #Inicio{
     position: relative;
-    
+    width: 100%;
 }
 
 #Inicio img{
@@ -268,21 +268,25 @@ footer .redes a{
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 400px;
+    width: 100%;
     text-align: center;
-    margin-left: -200px;
+    margin-left: -50%;
     
 }
 
 #Inicio .bloque-inicio h1{
     color: white;
     font-size: 35px;
+    margin: 5px 0;
+    width: 100%;
+    
     
 }
 
 #Inicio .bloque-inicio p{
     color: white;
     font-size: 16px;
+    
     
 }
 
@@ -332,7 +336,7 @@ footer .redes a{
     padding-right: 15px;
     text-align: center;
     position: absolute;
-    top: 40%;
+    top: 80%;
     color: white;
     font-size: 18px;
     width: 100%;
@@ -413,6 +417,10 @@ footer .redes a{
 }
 
 
+/*------ responsive ---------*/
+
+
+
 
 
 @media(max-width:767px)
@@ -426,6 +434,10 @@ footer .redes a{
     .container{
         width: 100%;
     }    
+    
+    
+    
+    
     
     
     .columna-mobile-100{
@@ -480,10 +492,13 @@ footer .redes a{
     header .container .hamb{
         display: block;
         color:red;
-        font-size: 30px;
+        font-size: 25px;
         position: relative;
+        right: 5px;
         
     }
+    
+    
     
     form .boton.boton-negro{
         width: 100%;
@@ -503,7 +518,7 @@ footer .redes a{
     }
     
     
-    #Inicio{
+    #Inicio {
         
         height: 100vh;
     }
@@ -512,6 +527,13 @@ footer .redes a{
         object-fit: cover;
         object-position: center;
     }
+    
+    #Inicio .bloque-inicio{
+        height: 100%;
+                    
+        
+    }
+    
     
     #Servicios .bloque-servicio{
         margin-bottom: 15px;
