@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url(MENU.CSS);
+@import url(BANNER.CSS);
+@import url(BLOG.CSS);
+@import url(info-banda.css);    
+@import url(TEXTOS.CSS);
+
+    
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;    
+    color: black;
+}
+
+header {
+    width: 100%;
+    height: 50px;
+    background: #333;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.contenedor {
+    width: 98%;
+    margin: auto;
+}
+
+
+h1 {
+    float: left;
+    
+}
+header .contenedor{
+    display: table;
+}
+
+section {
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+#Bienvenidos {
+    text-align: center;
+    color: black;
+    margin: 0.1px;
+    
+}
+
+
+#blog {
+    
+    justify-content: center;
+
+}
+
+.blog img{
+    height: 180px;
+    width: 180px;
+    
+}
+
+.blog iframe{
+    width: 180px;
+    height: 200px;
+    top: auto;
+}
+
+info .contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 25px;
+    
+}
+
+footer .contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 25px;
+    width: 100%;
+}
+
+
+.copy {
+    font-size: 20px;
+  
+    
+}
+
+.sociales {    
+    width: 100%;
+    text-align: center;
+    font-size: 28px;
+    border: none;
+        
+}
+
+.icon {
+    text-decoration: none;
+  
+}
+
+
+.icon-facebook {
+    background: #2e406e;
+    border-radius: 80%;
+    color: #fff;
+    text-decoration: none;
+    
+}
+
+.icon-instagram {
+    background: #3f60a5;
+    border-radius: 80%;
+    color: #fff;
+    text-decoration: none;
+}
+
+.icon-youtube {
+    background: #e83028;
+    border-radius: 80%;
+    color:white;
+    text-decoration: none;
+
+}
+
+.sociales :hover {
+    background: rgba(50,50,49,0.5);
+    color: #e83028;    
+    border-radius: 80%;
+    border: 1.5px;
+}
+
+
+
+
+
+@media  (min-width:320px) {
+     .sociales {
+        width: auto;
+        
+    }
+    
+    
+
+}
+    
+@media  (min-width:720px) {
+    .sociales {
+        width: 80%;     
+    }
+ }
+    
+
+@media (min-width:1024px) {
+    .contenedor {
+        width: 1024px;
+    }
+    
+    .sociales {
+        width: 100%;
+    }
+}
