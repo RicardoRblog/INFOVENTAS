@@ -1,7 +1,7 @@
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 
@@ -11,54 +11,56 @@ background-color: rgb(212, 212, 212);
 }
 
 body{
-    font-family: roboto;
+  font-family: 'ROBOTO';
 }
 
 
 a{
- text-decoration: none;
- text-align: center;
- color: rgb(212, 212, 212);
-
+text-decoration: none;
+text-align: center;
+color: rgb(233, 233, 233);
+display: none;
 }
 
 
 
 h1{
- position: relative;
- color:black;
- font-size: 40px;
- text-align: center;
+Position: relative;
+width: 100%;
+color:rgb(61, 61, 61);
+font-size: 40px;
+text-align: center;
 
 
 }
 
 
 .informe{
-  position: absolute;
-  background-color: rgb(37, 37, 37);
-  width: 100%;
-  height: 600px;
-  overflow: hidden;
-  
+position: absolute;
+background-color: rgb(37, 37, 37);
+width: 100%;
+height: 600px;
+overflow: hidden;
+
 
 
 }
 
 
 iframe{
-    width: 1020px;
-    height: 1020px;
-    border: 1px rgb(212, 212, 212);
+  top: 30px;
+  width: 1020px;
+  height: 1020px;
+  border: 1px rgb(212, 212, 212);
 }
 
 
 @media (min-width:600px){
 
-    .informe{
-      height: 600px;
+  .informe{
+    height: 600px;
+    width: auto;
+  }
 
-    }
-
-
+  
 }
