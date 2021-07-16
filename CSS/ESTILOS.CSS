@@ -55,12 +55,35 @@ iframe{
 }
 
 
+
+
+.copy{
+  Position: relative;
+  width: 100%;
+  color:rgb(61, 61, 61);
+  font-size: 12px;
+  text-align: center;
+  transform: translateY(4100%);
+}
+
+
+
 @media (min-width:600px){
 
   .informe{
-    height: 600px;
+    height: 650px;
     width: auto;
   }
 
-  
+  h1{
+    max-width: 1000px;
+
+  }
+  .copy{
+    left: -22%;
+    
+      }
+
+
+
 }
