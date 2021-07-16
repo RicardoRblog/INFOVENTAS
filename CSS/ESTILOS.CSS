@@ -68,7 +68,7 @@ iframe{
 
 
 
-@media (min-width:700px){
+@media (min-width:500px){
 
   .informe{
     height: 650px;
@@ -80,7 +80,7 @@ iframe{
 
   }
   .copy{
-    left: -22%;
+    left: 0%;
     
       }
 
