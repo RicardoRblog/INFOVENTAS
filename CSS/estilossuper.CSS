@@ -154,7 +154,7 @@ align-items: center;
 
 
 
-@media (min-width:800px){
+@media (min-width:720px){
    
   header{
     position: relative;
