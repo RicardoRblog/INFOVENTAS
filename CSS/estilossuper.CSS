@@ -48,8 +48,8 @@ align-items: center;
   background-color: rgb(92, 91, 91);
   top: 50px;
   width: 100%;
-  height: 0px;
-  height: 100%;
+  
+  height: 580px;
   align-content: center;
   overflow: hidden;
   
@@ -96,7 +96,7 @@ align-items: center;
 
 
 
-@media (min-width:400px){
+@media (min-width:500px){
     
   header{
     position: relative;
@@ -127,16 +127,16 @@ align-items: center;
     
   
   .informe{
+    margin: auto;
     position: absolute;
-    width: 100%;
-    height: 90%;
-    overflow: hidden;
+    height: 600px;
+    width: auto;
     
   }
 
   iframe{
     width: 1020px;
-    height: 580px;
+    height: 1020px;
     border: 1px rgb(212, 212, 212);
     
   }
