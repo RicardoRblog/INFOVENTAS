@@ -84,7 +84,7 @@ font-size: 12px;
 
 
 
-@media (min-width:600px){
+@media (min-width:500px){
 
     h1{
         line-height: 40px;
@@ -98,7 +98,7 @@ font-size: 12px;
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
-        max-height: 300px;
+        max-height: 200px;
         top: 0;
     
     }
@@ -107,7 +107,7 @@ font-size: 12px;
       position: absolute;
       
       bottom: 0;
-      top: 45%;
+      top: 30%;
       transform: translateY(100%);
       
   }
