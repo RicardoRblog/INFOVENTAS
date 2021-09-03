@@ -129,7 +129,7 @@ font-size: 12px;
 
 
 
-@media (min-width:1000px){
+@media (min-width:720px){
 
     h1{
         line-height: 180px;
@@ -152,8 +152,8 @@ font-size: 12px;
         position: absolute;
         
         bottom: 0;
-        top: 55%;
-        transform: translateY(100%);
+        top: 70%;
+        transform: translateY(-50%);
         
     }
     
@@ -170,5 +170,20 @@ font-size: 12px;
    
    
     }
+
+
+    .copy{
+      position: relative;
+      width: 100%;
+      color:rgba(4, 64, 175, 0.932);
+      font-size: 12px;
+      text-align: center;
+      transform: translateY(-50%);
+      
+    }
+    
+
+
+
 
   }

@@ -6,7 +6,7 @@
   
   
   body{
-  background-color: rgb(255, 251, 251);
+  background-color: white;
   height: 100%;
   }
   
@@ -18,7 +18,7 @@
   position: relative;
   width: 100%;
   height: 100px;
-  background-color: rgb(255, 251, 251);
+  background-color: white;
   align-items: center;
   
   }
@@ -45,10 +45,9 @@
   
   .informe{
     position: absolute;
-    background-color: rgb(255, 249, 249);
+    background-color: white;
     top: 50px;
     width: 100%;
-    
     height: 580px;
     align-content: center;
     overflow: hidden;
@@ -60,10 +59,11 @@
     
     iframe{
       top: 0%;
+      
       width: 1020px;
       height: 1020px;
       border: 1px rgb(3, 0, 0);
-      background-color: rgb(255, 247, 247);
+      background-color: white;
     
     }
   
@@ -123,7 +123,7 @@
     iframe{
       width: 1020px;
       height: 1020px;
-      border: 1px rgb(255, 255, 255);
+      border: 1px white;
       
     }
   
@@ -136,6 +136,25 @@
   
   
   
+ }
+  
+  
+  @media (min-width:1020px){
+
+    .informe{
+      margin: auto;
+      left: 50%;
+      transform: translateX(-50%);
+      position: absolute;
+      height: 600px;
+      width: auto;
+
+    }
+      
   }
-  
-  
+
+
+
+
+
+
