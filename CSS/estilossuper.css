@@ -56,6 +56,31 @@
     
     }
     
+
+  .SEGUIMIENTO{
+
+    position: absolute;
+    background-color: white;
+    top: 50px;
+    width: 100%;
+    height: 580px;
+    align-content: center;
+    
+
+
+
+  }
+
+  .pdfview{
+    
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+
+
+  }
+
+
     
     iframe{
       top: 0%;
