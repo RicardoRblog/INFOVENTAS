@@ -15,7 +15,7 @@ text-align: center;
 
 h1{
 position: relative;
-line-height: 250px;
+line-height: 200px;
 width: 100%;
 height: 200px;
 font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;   
@@ -36,8 +36,8 @@ img{
  text-align: center;
  width: 100%;
  height: 50px;
- 
  display: flex;
+ flex-wrap: wrap;
  justify-content: center;
 
  
@@ -46,13 +46,13 @@ img{
 
 .CONTENEDOR-MENU a{
   position: relative;
-  top: 70px; 
+  top: 50px; 
   font-family: roboto, sans-serif;
   text-decoration: none;
   line-height: 50px;
-  display: block;
+  display: flex;
   padding: 0 30px ;
-  margin: 0 10px;
+  margin: 5px 10px;
   text-transform: uppercase;
   letter-spacing: 1px;
   color: rgba(4, 64, 175, 0.932);
@@ -84,10 +84,10 @@ font-size: 12px;
 
 
 
-@media (min-width:450px){
+@media (min-width:400px){
 
     h1{
-        line-height: 40px;
+        line-height: 30px;
         width: 100%;
         height: 300px; 
         font-size: 20px;   
@@ -104,23 +104,42 @@ font-size: 12px;
     }
 
     .CONTENEDOR-MENU{
-      position: absolute;
-      
+      position: relative;
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
       bottom: 0;
-      top: 30%;
-      transform: translateY(100%);
+      top: 0%;
+      transform: translateY(0%);
       
   }
 
 
+  .CONTENEDOR-MENU a{
+      justify-content: center;
+      
+      
+  }
 
+
+  footer{
+    position: relative;
+    top: 50%;
+    transform: translateY(800%);
+    
+  }
+  
+  
+  
+  
   .copy{
     position: relative;
+    top: 150%;
     width: 100%;
     color:rgba(4, 64, 175, 0.932);
     font-size: 12px;
     text-align: center;
-    transform: translateY(50%);
+        
     
   }
   
@@ -129,10 +148,13 @@ font-size: 12px;
 
 
 
-@media (min-width:720px){
+
+
+
+  @media (min-width:980px){
 
     h1{
-        line-height: 180px;
+        line-height: 100px;
         width: 100%;
         height: 100px; 
         font-size: 50px;   
@@ -140,7 +162,7 @@ font-size: 12px;
     
     img{
         position: absolute;
-        max-height: 800px;
+        max-height: 700px;
         top: 0;
         left: 50%;
         transform: translateX(-50%)translateY(25%);
@@ -149,18 +171,21 @@ font-size: 12px;
     
     
     .CONTENEDOR-MENU{
-        position: absolute;
-        
-        bottom: 0;
-        top: 70%;
-        transform: translateY(-50%);
-        
-    }
+      position: relative;
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+      bottom: 0;
+      top: 50%;
+      transform: translateY(800%);
+      
+  }
+
     
     .CONTENEDOR-MENU a{
         position: relative;
         padding: 0 50px;
-        margin: 0 50px;
+        margin: 0 20px;
         
       }
    
@@ -172,16 +197,25 @@ font-size: 12px;
     }
 
 
+    footer{
+      position: relative;
+      top: 0%;
+      transform: translateY(3000%);
+      
+    }
+    
+    
+    
+    
     .copy{
       position: relative;
       width: 100%;
       color:rgba(4, 64, 175, 0.932);
       font-size: 12px;
       text-align: center;
-      transform: translateY(-50%);
+          
       
     }
-    
 
 
 
