@@ -1,40 +1,73 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>INFO VENTAS</title>
-    <link rel="shourtcut icon" href="IMG/LogoAzul.png">
-
-    <link rel="stylesheet" href="CSS/estilossuper.css">
-
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" 
-    rel="stylesheet">
-
-
+    <title>Gerencial | Puyo SA</title>
+    <link rel="shortcut icon" href="IMG/LogoAzul.png">
+    <link rel="stylesheet" href="css/estilosuper.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+    <header class="header-gerencial">
+            <div class="contenedor-header">
+                <div class="logo-titulo">
+                    <a href="index.html" class="logo-link">
+                        <i class=></i>
+                        <img src="IMG/LogoAzul.png" alt="Logo Puyo SA" class="logo-img">
+                    </a>
+                </div>
+            <div class="encabezado">
+                <div class="titulos">
+                    <h1>GERENCIA</h1>
+                    <p class="subtitulo">Sistema de Gestion Comercial</p>
+                </div>    
+            </div>
 
-<header>
-    
-    <h1>RESULTADOS GERENCIA</h1>
-    <a href="index.html"><img src="IMG/LogoAzul.png" class="regresar"/></a>
+            <div class="info-panel">
+                <span class="fecha-actual" id="fecha-actual"></span>
+                <div class="estado-sistema">
+                    <i class="fas fa-circle-notch"></i>
+                    <span>ON LINE</span>
+                </div>
+            </div>
+            </div>   
+    </header>
+
+    <main class="contenedor-principal">
        
-</header>
-    
 
-<div class="informe">
-    
-    <iframe src="https://app.powerbi.com/reportEmbed?reportId=8b2fa9bc-0b30-49b2-9aaf-084238f43c47&autoAuth=true&ctid=9b3f5afa-16f8-4b0c-b782-0eeaf5143070&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly93YWJpLXBhYXMtMS1zY3VzLXJlZGlyZWN0LmFuYWx5c2lzLndpbmRvd3MubmV0LyJ9" frameborder="0" allowFullScreen="true"></iframe>
-    
-</div>
-    
+        <div class="contenedor-informe">
+            <div class="tarjeta-informe">
+                <iframe src="https://app.powerbi.com/reportEmbed?reportId=8b2fa9bc-0b30-49b2-9aaf-084238f43c47&autoAuth=true&ctid=9b3f5afa-16f8-4b0c-b782-0eeaf5143070&config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly93YWJpLXBhYXMtMS1zY3VzLXJlZGlyZWN0LmFuYWx5c2lzLndpbmRvd3MubmV0LyJ9" 
+                frameborder="0" allowFullScreen="true"></iframe>
+            </div>
+        </div>
 
+        
+    </main>
 
+    <footer class="footer-empresarial">
+        <div class="contenedor-footer">
+            <p class="copy">&copy; 2024 Puyo SA. Todos los derechos reservados.</p>
+            
+        </div>
+    </footer>
+
+    <script>
+        // Mostrar fecha actual
+        const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+        document.getElementById('fecha-actual').innerHTML = new Date().toLocaleDateString('es-ES', options);
+        
+        // Simular carga de datos
+        document.addEventListener('DOMContentLoaded', function() {
+            const estado = document.querySelector('.estado-sistema i');
+            estado.style.color = '#4CAF50';
+            estado.classList.remove('fa-circle-notch');
+            estado.classList.add('fa-check-circle');
+        });
+    </script>
 </body>
-<footer>
-    <p class="copy">Puyo Sa &copy;2024</p>
-</footer>
-
 </html>

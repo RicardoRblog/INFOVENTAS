@@ -1,54 +1,120 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>INFO VENTAS</title>
-    <link rel="shourtcut icon" href="IMG/LogoAzul.png">
-
+    <title>INFOVENTAS</title>
+    <link rel="shortcut icon" href="IMG/LogoAzul.png">
     <link rel="stylesheet" href="CSS/principal.css">
-
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" 
-    rel="stylesheet">
-
-
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<header>
-    
-
-    <div class="principio">
-     <h1>RESULTADOS DE VENTAS</h1>
- 
-     <a href="#index.html"><img src="IMG/LogoAzul.png" alt=""></a>
- 
- 
-    </div>
-    
-</header>
-
-
 <body>
+    <header class="header-empresarial">
+        <div class="contenedor-header">
+            <div class="logo-titulo">
+                <a href="index.html" class="logo-link">
+                    <img src="IMG/LogoAzul.png" alt="Logo Puyo SA" class="logo-img">
+                </a>
+            </div>    
+            <div class="encabezado">
+                <div class="titulos">
+                    <h1>INFOVENTAS</h1>
+                    <p class="subtitulo">Sistema de Gestión Comercial</p>
+                </div>
 
- 
-    <div class="CONTENEDOR-MENU">
+            </div>
+                
+            <div class="info-empresa">
+                    <span class="fecha-actual" id="fecha-actual"></span>
+                    <span class="usuario-conectado"><i class="fas fa-user"></i></span>
+            </div>
+        </div>
+    </header>
+
+    <main class="contenedor-principal">
+        <div class="panel-accesos">
+            <div class="tarjeta-acceso">
+                <a href="gerencia.html" class="boton-acceso">
+                    <div class="icono-acceso">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Gerencia</h3>
+                    <p>Indicadores estratégicos Para Gerencia</p>
+                </a>
+            </div>
+            
+            <div class="tarjeta-acceso">
+                <a href="supervisor.html" class="boton-acceso">
+                    <div class="icono-acceso">
+                        <i class="fas fa-clipboard-check"></i>
+                    </div>
+                    <h3>Supervisión</h3>
+                    <p>Control de equipos y seguimiento de metas</p>
+                </a>
+            </div>
+            
+            <div class="tarjeta-acceso">
+                <a href="vendedor.html" class="boton-acceso">
+                    <div class="icono-acceso">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3>Vendedores</h3>
+                    <p>Gestión de clientes y portafolio</p>
+                </a>
+            </div>
+            
+            <div class="tarjeta-acceso">
+
+            <!--    <a href="https://drive.google.com/file/d/1-FBhnGRPsZ88nEj9QOdnzBpgKs_N8QK5/view?usp=sharing" target="_blank" class="boton-acceso"> -->
+             
+                <a href="la_informacion_sirve_para_dos_cosas_..." target="_blank" class="boton-acceso">
+             
+               
+            <div class="icono-acceso">
+            
+            <i class="fas fa-trophy"></i>
+            
+                    </div>
+                    <h3>Concursos</h3>
+                    <p>Dinamicas comerciales</p>
+                </a>
+            </div>
+        </div>
+
+        <div class="panel-informativo">
+            <div class="notificacion-urgente">
+                <i class="fas fa-bullhorn"></i>
+                <p>"La única forma de hacer un gran trabajo es amar lo que haces". -Steve Jobs</p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer-empresarial">
+        <div class="contenedor-footer">
+            <p class="copy">&copy; 2024 Puyo SA. Todos los derechos reservados.</p>
+            <div class="enlaces-footer">
+             
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mostrar fecha actual
+        const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+        document.getElementById('fecha-actual').innerHTML = new Date().toLocaleDateString('es-ES', options);
         
-        <a href="gerencia.html" class="buttom">Gerente</a>
-        <a href="supervisor.html" class="buttom">Supervisor</a>
-        <a href="vendedor.html" class="buttom">Vendedor</a>
-        <a href="https://drive.google.com/file/d/1-FBhnGRPsZ88nEj9QOdnzBpgKs_N8QK5/view?usp=sharing" target="_blank"class="buttom">Concursos</a>
-                 
-
-    </div>
-
-    
-
-
-
-
+        // Efecto hover para tarjetas
+        const tarjetas = document.querySelectorAll('.tarjeta-acceso');
+        tarjetas.forEach(tarjeta => {
+            tarjeta.addEventListener('mouseenter', () => {
+                tarjeta.style.transform = 'translateY(-5px)';
+            });
+            tarjeta.addEventListener('mouseleave', () => {
+                tarjeta.style.transform = 'translateY(0)';
+            });
+        });
+    </script>
 </body>
-<footer>
-    <p class="copy">Puyo Sa &copy;2024</p>
-</footer>
-
 </html>
