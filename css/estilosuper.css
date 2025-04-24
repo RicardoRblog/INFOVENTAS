@@ -187,6 +187,7 @@ body {
     justify-content: center;
     align-items: center;
   
+  
 }
 
 .tarjeta-informe {
@@ -210,6 +211,42 @@ body {
  
      
 }   
+
+
+.tarjeta-informe-concursos {
+    background: white;
+    border-radius: 10px;
+    box-shadow: var(--sombra);
+    overflow: hidden;
+    height: 600px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+   
+    
+}
+
+.tarjeta-informe-concursos a{
+    font-size: 2rem;
+    text-decoration: none;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+   
+}
+
+.boton-acceso{
+    margin: 0;
+    position: absolute;
+    background-color: var(--color-fondo);
+    padding: 10px;
+    border-radius: 10px;
+    
+   
+    
+}
+
 
 
 .tarjeta-informe iframe {
