@@ -108,7 +108,7 @@ body {
 
 .panel-accesos {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 2rem;
     margin-bottom: 3rem;
 }
@@ -149,7 +149,7 @@ body {
 
 .tarjeta-acceso:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 8px 20px rgba(151, 151, 151, 0.726);
 }
 
 .tarjeta-acceso:hover .icono-acceso {
@@ -229,25 +229,31 @@ body {
 }
 
 /* Responsive */
-@media (max-width: 768px) {
+@media (max-width: 900px) {
 
-    .contenedor-header{
-       text-align: center;
-        align-items: center;
-        margin: 0 ;
-        padding: 0 ;
-     
+  
+    .header-gerencial{
+        position: relative;
+        z-index: 10;
+        padding: auto;
     }
-
 
     .contenedor-header {
-        flex-direction: column;
-        gap: 1.5rem;
+        justify-content: space-between;
+        gap: 0.5rem;
         text-align: center;
+        padding: 5px;
+        
     }
     
+
+.contenedor-header h1{
+    font-size: 16px;
+}
+    
     .info-empresa {
-        align-items: center;
+        text-align: right;
+        padding: 2px;
     }
     
     .panel-accesos {
@@ -261,10 +267,30 @@ body {
     }
 
     .tarjeta-acceso{
-        width:100%;
+        width:250px;
         height: auto;
        
     }
+
+    .panel-accesos {
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: center;
+       
+    }
+
+
+
+
+
+.contenedor-footer{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+   
+}
+
+
 
 
 
