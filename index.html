@@ -92,17 +92,20 @@
 
     <footer class="footer-empresarial">
         <div class="contenedor-footer">
-            <p class="copy">&copy; 2024 Puyo SA. Todos los derechos reservados.</p>
+            <p class="copy">&copy; <span id="current-year">2024</span> Puyo SA. Todos los derechos reservados.</p>
             <div class="enlaces-footer">
-             
+                <!-- Tus enlaces del footer aquí -->
             </div>
         </div>
     </footer>
-
     <script>
         // Mostrar fecha actual
         const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
         document.getElementById('fecha-actual').innerHTML = new Date().toLocaleDateString('es-ES', options);
+
+        // Actualizar año en el footer
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+    
         
         // Efecto hover para tarjetas
         const tarjetas = document.querySelectorAll('.tarjeta-acceso');
