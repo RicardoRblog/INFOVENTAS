@@ -28,10 +28,10 @@ body {
 .header-empresarial {
     background-color: white;
     box-shadow: var(--sombra);
-    padding: 1rem 0;
+    padding: 0.1rem 0;
     position: sticky;
     top: 0;
-    z-index: 1000;
+    z-index: 1;
     justify-content: center;
 }
 
