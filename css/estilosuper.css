@@ -130,6 +130,7 @@ body {
     align-items: center;
     text-align: center;
     background-color: #8da6be;
+    
 }
 
 .barra-herramientas {
@@ -192,7 +193,7 @@ body {
     max-width: 1050px;
     margin: 0 auto;
     transform: scale(1.28);
-    transform-origin: top center ;
+    transform-origin: TOP center ;
     top:20px;
     border-radius: 10px;
 
@@ -454,12 +455,13 @@ display: none;
     margin: 0 auto;
     transform: scale(1);
     transform-origin: center ;
-    top:20px;
-    border-radius: 10px;
-    overflow: hidden;
+   
 
 }
 
+.tarjeta-informe {
+    height: 380PX;
+}
 
 
 }
