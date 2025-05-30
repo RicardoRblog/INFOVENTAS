@@ -448,4 +448,18 @@ display: none;
        
     }
 
+.contenedor-informe {
+    width: 100%;
+    max-width: 1050px;
+    margin: 0 auto;
+    transform: scale(1);
+    transform-origin: center ;
+    top:20px;
+    border-radius: 10px;
+    overflow: hidden;
+
+}
+
+
+
 }
